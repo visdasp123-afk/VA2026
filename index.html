@@ -1,0 +1,1072 @@
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vishnu & Ajisha | Our Wedding</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+  --cream: #fbf8f0;
+  --cream-dark: #f2ead8;
+  --green: #183c32;
+  --green-light: #285849;
+  --gold: #b99755;
+  --gold-light: #d9c48a;
+  --brown: #49372b;
+  --white: #fffdf8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ------------------------------
+   GENERAL
+------------------------------ */
+
+section {
+  position: relative;
+  padding: 100px 7%;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.section-label {
+  color: var(--gold);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(42px, 6vw, 70px);
+  font-weight: 400;
+  color: var(--green);
+  line-height: 1;
+}
+
+.gold-line {
+  width: 70px;
+  height: 1px;
+  background: var(--gold);
+  margin: 25px auto;
+}
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  background:
+    linear-gradient(
+      rgba(12,30,25,.25),
+      rgba(12,30,25,.58)
+    ),
+    url("images/hero.jpg") center/cover no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border: 1px solid rgba(221,199,142,.7);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero-small {
+  font-size: 11px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: clamp(65px, 13vw, 150px);
+  line-height: .8;
+}
+
+.hero-amp {
+  font-size: .45em;
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.hero-date {
+  margin-top: 35px;
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.scroll::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 45px;
+  background: rgba(255,255,255,.7);
+  margin: 12px auto 0;
+  animation: scrollLine 1.8s infinite;
+}
+
+@keyframes scrollLine {
+  0%,100% { transform: scaleY(.4); transform-origin: top; }
+  50% { transform: scaleY(1); }
+}
+
+/* ------------------------------
+   INTRO
+------------------------------ */
+
+.intro {
+  text-align: center;
+  background: var(--cream);
+}
+
+.intro-text {
+  max-width: 700px;
+  margin: 30px auto 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   DECORATION
+------------------------------ */
+
+.leaf-decoration {
+  text-align: center;
+  color: var(--gold);
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+/* ------------------------------
+   COUPLE
+------------------------------ */
+
+.couple-section {
+  background: var(--white);
+  text-align: center;
+}
+
+.couple-grid {
+  max-width: 1000px;
+  margin: 60px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+}
+
+.person {
+  text-align: center;
+}
+
+.photo-frame {
+  position: relative;
+  padding: 9px;
+  border: 1px solid var(--gold);
+  margin-bottom: 25px;
+}
+
+.photo-frame::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(185,151,85,.35);
+  pointer-events: none;
+}
+
+.photo-frame img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.person-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 43px;
+  color: var(--green);
+}
+
+.person-info {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ------------------------------
+   STORY
+------------------------------ */
+
+.story {
+  background: var(--green);
+  color: white;
+  text-align: center;
+}
+
+.story .section-title {
+  color: white;
+}
+
+.story-text {
+  max-width: 700px;
+  margin: 35px auto;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 26px;
+  line-height: 1.7;
+}
+
+/* ------------------------------
+   EVENTS
+------------------------------ */
+
+.events {
+  background: var(--cream-dark);
+  text-align: center;
+}
+
+.events-grid {
+  max-width: 1000px;
+  margin: 55px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.event-card {
+  background: var(--white);
+  padding: 45px 30px;
+  border-top: 3px solid var(--gold);
+}
+
+.event-icon {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.event-card h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  color: var(--green);
+  font-weight: 500;
+}
+
+.event-card p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.map-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 24px;
+  border: 1px solid var(--gold);
+  color: var(--green);
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.map-button:hover {
+  background: var(--green);
+  color: white;
+}
+
+/* ------------------------------
+   COUNTDOWN
+------------------------------ */
+
+.countdown {
+  background: var(--green);
+  color: white;
+  text-align: center;
+}
+
+.countdown .section-title {
+  color: white;
+}
+
+.timer {
+  max-width: 800px;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 15px;
+}
+
+.time-box {
+  padding: 20px;
+  border: 1px solid rgba(217,196,138,.45);
+}
+
+.time-number {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 55px;
+  color: var(--gold-light);
+}
+
+.time-label {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* ------------------------------
+   GALLERY
+------------------------------ */
+
+.gallery {
+  background: var(--white);
+  text-align: center;
+}
+
+.gallery-grid {
+  max-width: 1100px;
+  margin: 55px auto 0;
+  columns: 3 250px;
+  column-gap: 15px;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform .8s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+/* ------------------------------
+   FINAL
+------------------------------ */
+
+.final {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    linear-gradient(rgba(24,60,50,.72),rgba(24,60,50,.72)),
+    url("images/couple3.jpg") center/cover no-repeat;
+
+  color: white;
+}
+
+.final h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(55px, 10vw, 100px);
+  font-weight: 400;
+}
+
+.final p {
+  margin-top: 20px;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+  background: #102b24;
+  color: rgba(255,255,255,.7);
+  text-align: center;
+  padding: 35px;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* ------------------------------
+   SCROLL ANIMATION
+------------------------------ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(45px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ------------------------------
+   MOBILE
+------------------------------ */
+
+@media(max-width:700px) {
+
+  section {
+    padding: 75px 20px;
+  }
+
+  .hero::after {
+    inset: 12px;
+  }
+
+  .hero h1 {
+    font-size: 68px;
+  }
+
+  .hero-small {
+    letter-spacing: 4px;
+  }
+
+  .couple-grid,
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-frame img {
+    height: 420px;
+  }
+
+  .timer {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .time-number {
+    font-size: 45px;
+  }
+
+  .gallery-grid {
+    columns: 2 150px;
+  }
+
+  .intro-text,
+  .story-text {
+    font-size: 22px;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+  <div class="hero-content reveal">
+
+    <div class="hero-small">
+      Together with their families
+    </div>
+
+    <h1>
+      Vishnu
+      <span class="hero-amp">&</span>
+      Ajisha
+    </h1>
+
+    <div class="hero-date">
+      OUR WEDDING JOURNEY
+    </div>
+
+  </div>
+
+  <div class="scroll">
+    Scroll
+  </div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section class="intro">
+
+  <div class="container reveal">
+
+    <div class="section-label">
+      With love
+    </div>
+
+    <h2 class="section-title">
+      Two Hearts<br>One Journey
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p class="intro-text">
+      With the blessings of our families and
+      the love of those who mean the most to us,
+      we invite you to be part of our beautiful
+      beginning together.
+    </p>
+
+    <div class="leaf-decoration">
+      ❧
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     COUPLE
+========================= -->
+
+<section class="couple-section">
+
+  <div class="container">
+
+    <div class="reveal">
+
+      <div class="section-label">
+        The couple
+      </div>
+
+      <h2 class="section-title">
+        Meet the Couple
+      </h2>
+
+      <div class="gold-line"></div>
+
+    </div>
+
+
+    <div class="couple-grid">
+
+      <!-- VISHNU -->
+
+      <div class="person reveal">
+
+        <div class="photo-frame">
+
+          <img
+            src="images/couple1.jpg"
+            alt="Vishnu">
+
+        </div>
+
+        <h3 class="person-name">
+          Vishnu Haridas
+        </h3>
+
+        <p class="person-info">
+          Son of Haridas & Sheela<br>
+          Peechanangadath House<br>
+          Civil Station, Kozhikode
+        </p>
+
+      </div>
+
+
+      <!-- AJISHA -->
+
+      <div class="person reveal">
+
+        <div class="photo-frame">
+
+          <img
+            src="images/couple2.jpg"
+            alt="Ajisha">
+
+        </div>
+
+        <h3 class="person-name">
+          Ajisha
+        </h3>
+
+        <p class="person-info">
+          Daughter of Babu & Seena<br>
+          Venginimukkath House<br>
+          Kannankara
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     STORY
+========================= -->
+
+<section class="story">
+
+  <div class="container reveal">
+
+    <div class="section-label">
+      Our story
+    </div>
+
+    <h2 class="section-title">
+      A New Chapter
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p class="story-text">
+      Some journeys begin with a single moment.
+      Ours became a story of two people,
+      two families and one beautiful future.
+      Now, we begin our forever.
+    </p>
+
+    <div class="leaf-decoration">
+      ❧
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     EVENTS
+========================= -->
+
+<section class="events">
+
+  <div class="container">
+
+    <div class="reveal">
+
+      <div class="section-label">
+        Save the date
+      </div>
+
+      <h2 class="section-title">
+        Wedding Events
+      </h2>
+
+      <div class="gold-line"></div>
+
+    </div>
+
+
+    <div class="events-grid">
+
+      <!-- CEREMONY -->
+
+      <div class="event-card reveal">
+
+        <div class="event-icon">
+          ✦
+        </div>
+
+        <h3>
+          Wedding Ceremony
+        </h3>
+
+        <p>
+          📅 Date: Coming Soon
+        </p>
+
+        <p>
+          ⏰ Time: Coming Soon
+        </p>
+
+        <p>
+          📍 Venue: Coming Soon
+        </p>
+
+        <a
+          href="#"
+          class="map-button"
+          onclick="return false;">
+          View Location
+        </a>
+
+      </div>
+
+
+      <!-- RECEPTION -->
+
+      <div class="event-card reveal">
+
+        <div class="event-icon">
+          ✦
+        </div>
+
+        <h3>
+          Reception
+        </h3>
+
+        <p>
+          📅 Date: Coming Soon
+        </p>
+
+        <p>
+          ⏰ Time: Coming Soon
+        </p>
+
+        <p>
+          📍 Venue: Coming Soon
+        </p>
+
+        <a
+          href="#"
+          class="map-button"
+          onclick="return false;">
+          View Location
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     COUNTDOWN
+========================= -->
+
+<section class="countdown">
+
+  <div class="container reveal">
+
+    <div class="section-label">
+      Until we say
+    </div>
+
+    <h2 class="section-title">
+      I Do
+    </h2>
+
+    <div class="gold-line"></div>
+
+
+    <div class="timer">
+
+      <div class="time-box">
+        <div class="time-number" id="days">
+          00
+        </div>
+        <div class="time-label">
+          Days
+        </div>
+      </div>
+
+      <div class="time-box">
+        <div class="time-number" id="hours">
+          00
+        </div>
+        <div class="time-label">
+          Hours
+        </div>
+      </div>
+
+      <div class="time-box">
+        <div class="time-number" id="minutes">
+          00
+        </div>
+        <div class="time-label">
+          Minutes
+        </div>
+      </div>
+
+      <div class="time-box">
+        <div class="time-number" id="seconds">
+          00
+        </div>
+        <div class="time-label">
+          Seconds
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section class="gallery">
+
+  <div class="container">
+
+    <div class="reveal">
+
+      <div class="section-label">
+        Memories
+      </div>
+
+      <h2 class="section-title">
+        Our Moments
+      </h2>
+
+      <div class="gold-line"></div>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item reveal">
+        <img src="images/photo1.jpg" alt="Memory">
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="images/photo2.jpg" alt="Memory">
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="images/photo3.jpg" alt="Memory">
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="images/photo4.jpg" alt="Memory">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="final">
+
+  <div class="reveal">
+
+    <div class="section-label">
+      Forever begins here
+    </div>
+
+    <h2>
+      Vishnu
+      <span class="hero-amp">&</span>
+      Ajisha
+    </h2>
+
+    <p>
+      WITH LOVE, LAUGHTER & FOREVER AHEAD
+    </p>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  VISHNU & AJISHA · OUR WEDDING
+
+</footer>
+
+
+<script>
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+const reveals =
+document.querySelectorAll(".reveal");
+
+const observer =
+new IntersectionObserver(
+  (entries) => {
+
+    entries.forEach(entry => {
+
+      if(entry.isIntersecting) {
+
+        entry.target.classList.add("active");
+
+        observer.unobserve(entry.target);
+
+      }
+
+    });
+
+  },
+  {
+    threshold: 0.15
+  }
+);
+
+reveals.forEach(element => {
+  observer.observe(element);
+});
+
+
+/* =========================
+   COUNTDOWN
+
+   IMPORTANT:
+   Replace the date below
+   with the actual wedding date.
+========================= */
+
+const weddingDate =
+new Date("2027-01-01T10:00:00").getTime();
+
+
+function updateCountdown() {
+
+  const now =
+  new Date().getTime();
+
+  const difference =
+  weddingDate - now;
+
+
+  if(difference <= 0) {
+
+    document.getElementById("days").innerText = "00";
+    document.getElementById("hours").innerText = "00";
+    document.getElementById("minutes").innerText = "00";
+    document.getElementById("seconds").innerText = "00";
+
+    return;
+  }
+
+
+  const days =
+  Math.floor(
+    difference /
+    (1000 * 60 * 60 * 24)
+  );
+
+
+  const hours =
+  Math.floor(
+    (difference %
+    (1000 * 60 * 60 * 24)) /
+    (1000 * 60 * 60)
+  );
+
+
+  const minutes =
+  Math.floor(
+    (difference %
+    (1000 * 60 * 60)) /
+    (1000 * 60)
+  );
+
+
+  const seconds =
+  Math.floor(
+    (difference %
+    (1000 * 60)) /
+    1000
+  );
+
+
+  document.getElementById("days")
+    .innerText =
+    String(days).padStart(2,"0");
+
+  document.getElementById("hours")
+    .innerText =
+    String(hours).padStart(2,"0");
+
+  document.getElementById("minutes")
+    .innerText =
+    String(minutes).padStart(2,"0");
+
+  document.getElementById("seconds")
+    .innerText =
+    String(seconds).padStart(2,"0");
+}
+
+
+updateCountdown();
+
+setInterval(
+  updateCountdown,
+  1000
+);
+
+</script>
+
+</body>
+</html>
+```
